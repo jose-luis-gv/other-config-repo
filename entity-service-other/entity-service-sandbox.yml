@@ -4,12 +4,9 @@
     overrides:
       - type: "test_bart"
         id: "FSU00BART"
-        description: "enable test_kylo for everyone"
+        description: "enable test_bart for everyone"
         actions:
           - "create"
           - "read"
           - "update"
           - "delete"
-        roles:
-          - "cppt-all"
-          - "dtci-cppt-ingestion-admin"

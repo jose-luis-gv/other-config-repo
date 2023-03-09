@@ -1,3 +1,13 @@
 bar-sb: spam
 foo-sb: from foo development
 democonfigclient.message: hello from dev profile
+permissions:
+  entity:
+    permissions:
+      - type: "apu"
+        id: "Apu"
+        description: "edit registered entity"
+        actions:
+          - "update"
+        roles:
+          - "role1"

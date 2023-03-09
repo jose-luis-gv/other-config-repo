@@ -1,1 +1,14 @@
 other-prop: "qwerty-sandbox"
+bar: spam
+foo: from foo sb
+permissions:
+  entity:
+    permissions:
+      - type: "moe"
+        id: "Moe001"
+        description: "edit registered entity"
+        actions:
+          - "update"
+          - "create"
+        roles:
+          - "role1"

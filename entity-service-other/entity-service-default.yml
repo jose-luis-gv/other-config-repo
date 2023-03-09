@@ -1,28 +1,11 @@
-﻿entity:
-  validator:
-    retryCount: 15
-    retryMinBackoffDuration: 100ms
+other-bar: spam
+other-foo: from foo development
+democonfigclient.message: hello from dev profile
 permissions:
   entity:
     permissions:
-        # RPM001, RPM067, ROM075 - edit registered planning titles.
       - type: "other"
         id: "RPM001other"
         description: "other edit registered planning titles"
         actions:
           - "update"
-        roles:
-          - "cppt-administrator"
-        joins:
-          - entityType: "title"
-            localField: "document.planningSource.id"
-            foreignField: "entityId"
-        conditions:
-          - field: "title.document.registrationType"
-            op: "match"
-            value: "Registered"
-        redactions:
-          - field: "document.calculatedWorkType"
-          - field: "document.calculatedWorkTypeDetail"
-          - field: "document.storefrontBrands"
-          - field: "document.originalSource"

@@ -1,0 +1,13 @@
+﻿permissions:
+  entity:
+    permissions:
+      # UCP-267 test_mickey collection is intended only for test purposes
+      - type: "test_flanders"
+        id: "FSUFlanders"
+        description: "enable test_flanders for everyone; ADD Comment to trigger cloud bus UCP-592"
+        actions:
+          - "create"
+          - "read"
+          - "delete"
+        roles:
+          - "dtci-cppt-ingestion-admin"
